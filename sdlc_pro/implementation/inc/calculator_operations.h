@@ -21,6 +21,7 @@ int oddnum(int operand1);
 int percent(int operand1, int operand2);
 int fact(int operand1);
 float area_p(float operand1, float operand2);
+double vol_sp(int radius, float pie); 
 
 
 
