@@ -84,14 +84,14 @@ int percent(int operand1, int operand2)
 int fact(int operand1)
 {
   /* Return -1 for negative numbers */
-  if(number < 0)
+  if(operand1 < 0)
     return -1;
 
   /* Return 1 for 0 */
-  if(number == 0)
+  if(operand1 == 0)
     return 1;
 
   /* Recursively calculate Factorial of the number */
-  return number * factorial(number-1);
+  return operand1 * factorial(operand1-1);
 }
 
