@@ -20,7 +20,7 @@ void test_oddnum(void);
 void test_percent(void);
 void test_fact(void);
 void test_area_p(void);
-void test_vol_sp(void);
+void test_volumesp(void);
 
 /* Start of the application test */
 int main() {
@@ -47,7 +47,7 @@ int main() {
   CU_add_test(suite, "percent", test_percent);
   CU_add_test(suite, "fact", test_fact);
   CU_add_test(suite, "area_p", test_area_p);
-  CU_add_test(suite, "vol_sp", test_vol_sp);
+  CU_add_test(suite, "volumesp", test_volsp);
   
 
 
@@ -136,9 +136,9 @@ void test_area_p(void)
 {
   CU_ASSERT(66.22 == area_p(30.1, 2.2));
 }
-void test_volsp(void)
+void test_volumesp(void)
 {
-  CU_ASSERT(442368 == volsp((4/3)*3*(48*48*48)));
+  CU_ASSERT(442368 == volumesp((4/3)*3*(48*48*48)));
 }
             
                                       
