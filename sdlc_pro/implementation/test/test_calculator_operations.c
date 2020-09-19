@@ -47,7 +47,7 @@ int main() {
   CU_add_test(suite, "percent", test_percent);
   CU_add_test(suite, "fact", test_fact);
   CU_add_test(suite, "area_p", test_area_p);
-  CU_add_test(suite, "volumesp", test_volsp);
+  CU_add_test(suite, "volumesp", test_volumesp);
   
 
 
