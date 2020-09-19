@@ -138,7 +138,7 @@ void test_area_p(void)
 }
 void test_vol_sp(void)
 {
-  CU_ASSERT(442368 == vol_sp((4.0/3.0)*3*(48*48*48)));
+  CU_ASSERT(442368 == vol_sp((4/3)*3*(48*48*48)));
 }
             
                                       
