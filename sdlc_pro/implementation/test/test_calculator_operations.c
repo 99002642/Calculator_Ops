@@ -58,66 +58,66 @@ int main() {
 
 /* Write all the test functions */
 void test_addition(void) {
-  CU_ASSERT(30 == add(10, 20));
+  CU_ASSERT(30 == addition(10, 20));
 
   /* Dummy fail*/
-  CU_ASSERT(1500 == add(750, 7500));
+  CU_ASSERT(1500 == addition(750, 7500));
 }
 
 void test_subtra(void) {
-  CU_ASSERT(-3 == subtract(0, 3));
+  CU_ASSERT(-3 == subtra(0, 3));
 
   /* Dummy fail*/
-  CU_ASSERT(1 == subtract(1000, 900));
+  CU_ASSERT(1 == subtra(1000, 900));
 }
 
 void test_multi(void) {
-  CU_ASSERT(0 == multiply(1, 0));
+  CU_ASSERT(0 == multi(1, 0));
 
   /* Dummy fail*/
-  CU_ASSERT(2 == multiply(2, 5));
+  CU_ASSERT(2 == multi(2, 5));
 }
 
 void test_division(void) {
-  CU_ASSERT(0 == divide(1, 0));
+  CU_ASSERT(0 == division(1, 0));
 
   /* Dummy fail*/
-  CU_ASSERT(3 == divide(2, 2));
+  CU_ASSERT(3 == division(2, 2));
 }
 
 void test_primenum(void)
  {
-   CU_ASSERT(-1==prime(5));
-   CU_ASSERT(1==prime(4));
+   CU_ASSERT(-1==primenum(5));
+   CU_ASSERT(1==primenum(4));
  }
 void test_positivenum(void)
 {
-  CU_ASSERT(1== pos(1));
+  CU_ASSERT(1== positivenum(1));
 }
 void test_negativenum(void)
 {
-  CU_ASSERT(-1== neg(-4));
+  CU_ASSERT(-1== negativenum(-4));
 }
 void test_iszero(void)
 {
   CU_ASSERT(0== iszero(0));
 }
 void test_modulo(void) {
-  CU_ASSERT(0 == modu(10, 5));
+  CU_ASSERT(0 == modulo(10, 5));
 
   /* Dummy fail*/
-  CU_ASSERT(2 == divide(11, 3));
+  CU_ASSERT(2 == division(11, 3));
 }
 void test_evennum(void)
 {
-  CU_ASSERT(1 == eve(2));
+  CU_ASSERT(1 == evennum(2));
 }
 void test_oddnum(void)
 {
-  CU_ASSERT(1 == odd(3));
+  CU_ASSERT(1 == oddnum(3));
 }
 void test_percent(void) {
-  CU_ASSERT(5 == perc(5, 100));
+  CU_ASSERT(5 == percent(5, 100));
 }
 
 
