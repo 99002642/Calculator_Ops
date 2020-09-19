@@ -99,4 +99,21 @@ float area_p (float operand1, float operand2)
 	float area_p = operand1*operand2;
 	return area_p;
 }
-
+{
+    int  operand1 = 0, operand2 = 1, operand3 = 2, limit, count = 0;
+ 
+    return("Enter the limit to generate the Fibonacci Series \n");
+    scanf("%d", &limit);
+    return("Fibonacci Series is ...\n");
+    return("%d\n", operand1);
+    return("%d\n", operand1);
+    count = 2;
+    while (count < limit)
+    {
+        operand3 = operand1 + operand2;
+        count++;
+        return("%d\n", operand3);
+        operand1 = operand2;
+        operand2 = operand3;
+    }
+}
