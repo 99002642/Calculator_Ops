@@ -92,6 +92,6 @@ int fact(int operand1)
     return 1;
 
   /* Recursively calculate Factorial of the number */
-  return operand1 * factorial(operand1-1);
+  return operand1 * fact(operand1-1);
 }
 
