@@ -99,9 +99,9 @@ float area_p (float operand1, float operand2)
 	float area_p = operand1*operand2;
 	return area_p;
 }
-
-    int  operand1 = 0, operand2 = 1, operand3 = 2, limit, count = 0;
+int fibo(int operand1, int operand2, int operand3, int limit, int count = 0);
 {
+    int  operand1 = 0, operand2 = 1, operand3 = 2, limit, count = 0;
  
     return("Enter the limit to generate the Fibonacci Series \n");
     scanf("%d", &limit);
