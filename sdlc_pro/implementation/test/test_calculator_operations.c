@@ -126,5 +126,9 @@ void test_fact(void)
 {
   CU_ASSERT(120 == fact(5));
 }
+void test_area_p(void) 
+{
+  CU_ASSERT(66.22 == area_p(30.1, 2.2));
+}
 
 
