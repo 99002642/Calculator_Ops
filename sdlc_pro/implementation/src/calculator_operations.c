@@ -99,9 +99,9 @@ float area_p (float operand1, float operand2)
 	float area_p = operand1*operand2;
 	return area_p;
 }
-int volsp (int radius, int pie)
+int volumesp (int operand1, int operand2)
 {
-	int volsp = (4.0/3.0)*pie*(radius*radius*radius);
-	return volsp;
+	int volumesp = (4.0/3.0)*operand1*(operand2*operand2*operand2);
+	return volumesp;
 }
 	
