@@ -19,6 +19,7 @@ int modulo(int operand1, int operand2);
 int evennum(int operand1);
 int oddnum(int operand1);
 int percent(int operand1, int operand2);
+int fact(int operand1);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
