@@ -99,16 +99,5 @@ float area_p (float operand1, float operand2)
 	float area_p = operand1*operand2;
 	return area_p;
 }
-int fib (int fib1, int fib2, int fib3, int limit, int count=0)
-{
-	 count = 2;
-    while (count < limit)
-    {
-        fib3 = fib1 + fib2;
-        count++;
-        return("%d\n", fib3);
-        fib1 = fib2;
-        fib2 = fib3;
-    }
-}
+
 	
