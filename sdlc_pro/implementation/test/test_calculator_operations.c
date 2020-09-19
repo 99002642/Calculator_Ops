@@ -19,6 +19,7 @@ void test_evennum(void);
 void test_oddnum(void);
 void test_percent(void);
 void test_fact(void);
+void test_fibo(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -43,6 +44,7 @@ int main() {
   CU_add_test(suite, "oddnum", test_oddnum);
   CU_add_test(suite, "percent", test_percent);
   CU_add_test(suite, "fact", test_fact);
+  CU_add_test(suite, "fibo", test_fibo);
 
 
 /* Note: Do not edit START*/
