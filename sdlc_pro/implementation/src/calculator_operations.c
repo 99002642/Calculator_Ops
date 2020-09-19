@@ -94,4 +94,9 @@ int fact(int operand1)
   /* Recursively calculate Factorial of the number */
   return operand1 * fact(operand1-1);
 }
+float area_p (float operand1, float operand2)
+{
+	float area_p = operand1*operand2;
+	return area_p;
+}
 
