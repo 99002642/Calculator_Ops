@@ -138,7 +138,7 @@ void test_area_p(void)
 }
 void test_volumesp(void)
 {
-  CU_ASSERT(32 == volumesp(2);
+  CU_ASSERT(32 == volumesp((4/3)*3*(2*2*2)));
 }
             
                                       
