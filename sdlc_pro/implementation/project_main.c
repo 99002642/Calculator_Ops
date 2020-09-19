@@ -12,7 +12,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ addition=1, subtra, multi, divisiom, primenum, positivenum , negativenum, modulo, evennum,oddnum,percent,EXIT };
+enum operations{ ADDITION=1, SUBTRA, MULTI, DIVISION, PRIMENUM, POSITIVENUM , NEGATIVENUM, MODULO, EVENNUM,ODDNUM,PERCENT,EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -61,7 +61,7 @@ void calculator_menu(void)
     }
     switch(calculator_operation)
     {
-        case addition:
+        case ADDITION:
             printf("\n\t%d + %d = %d\nEnter to continue",
             calculator_operand1,
             calculator_operand2,
@@ -70,7 +70,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case subtra:
+        case SUBTRA:
             printf("\n\t%d - %d = %d\nEnter to continue",
             calculator_operand1,
             calculator_operand2,
@@ -79,7 +79,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case multi:
+        case MULTI:
             printf("\n\t%d * %d = %d\nEnter to continue",
             calculator_operand1,
             calculator_operand2,
@@ -88,7 +88,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case division:
+        case DIVISION:
             printf("\n\t%d / %d = %d\nEnter to continue",
             calculator_operand1,
             calculator_operand2,
@@ -97,7 +97,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case primenum:
+        case PRIMENUM:
             printf("\n\t %d\nEnter to continue",
             calculator_operand1,
             primenum(calculator_operand1));
@@ -105,7 +105,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-         case modulo:
+         case MODULO:
             printf("\n\t%d / %d = %d\nEnter to continue",
             calculator_operand1,
             calculator_operand2,
@@ -114,21 +114,21 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case evennum:
+        case EVENNUM:
             printf("\n\t%d / %d = %d\nEnter to continue",
             evennum(calculator_operand1));
 
             __fpurge(stdin);
             getchar();
             break;
-          case oddnum:
+          case ODDNUM:
             printf("\n\t%d / %d = %d\nEnter to continue",
             oddnum(calculator_operand1));
 
             __fpurge(stdin);
             getchar();
             break;
-          case percent:
+          case PERCENT:
             printf("\n\t%d / %d = %d\nEnter to continue",
             calculator_operand1,
             calculator_operand2,
@@ -145,5 +145,5 @@ void calculator_menu(void)
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((addition <= operation) && (EXIT >= operation)) ? VALID: INVALID;
+    return ((ADDITION <= operation) && (EXIT >= operation)) ? VALID: INVALID;
 }
