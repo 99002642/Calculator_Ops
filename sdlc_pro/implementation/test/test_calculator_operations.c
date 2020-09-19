@@ -18,6 +18,7 @@ void test_modulo(void);
 void test_evennum(void);
 void test_oddnum(void);
 void test_percent(void);
+void test_fact(void);
 /* Start of the application test */
 int main() {
 /* Note: Do not edit START*/
@@ -41,6 +42,7 @@ int main() {
   CU_add_test(suite, "evennum", test_evennum);
   CU_add_test(suite, "oddnum", test_oddnum);
   CU_add_test(suite, "percent", test_percent);
+  CU_add_test(suite, "fact", test_fact);
 
 
 /* Note: Do not edit START*/
@@ -116,8 +118,13 @@ void test_oddnum(void)
 {
   CU_ASSERT(1 == oddnum(3));
 }
-void test_percent(void) {
+void test_percent(void) 
+{
   CU_ASSERT(5 == percent(5, 100));
+}
+void test_fact(void) 
+{
+  CU_ASSERT(120 == fact(5));
 }
 
 
