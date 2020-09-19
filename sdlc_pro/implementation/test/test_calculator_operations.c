@@ -130,5 +130,9 @@ void test_area_p(void)
 {
   CU_ASSERT(66.22 == area_p(30.1, 2.2));
 }
+void test_fibo(void)
+{
+  CU_ASSERT(3 == limit(3));
+}
 
 
