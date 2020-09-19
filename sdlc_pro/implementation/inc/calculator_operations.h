@@ -21,7 +21,7 @@ int oddnum(int operand1);
 int percent(int operand1, int operand2);
 int fact(int operand1);
 float area_p(float operand1, float operand2);
-int fibo(int operand1, int operand2, int operand3, int limit);
+int fibo(int operand1, int operand2, int operand3, int limit, int count = 0);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
